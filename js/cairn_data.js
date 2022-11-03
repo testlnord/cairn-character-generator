@@ -1,94 +1,21 @@
 gen_data['character'] = [
-  'You are <i> {name} {surname}</i>, formerly {background}.<br>You have {physique} physique, {skin} skin, {hair} hair, and {face} face.<br>You speak in a {speech} manner and wear {clothing} clothing.<br>You are {vice} yet {virtue}, and are generally regarded as {reputation}. <br>You have had the misfortune of being {misfortune}.'
+  'You are <i> {name} </i>, formerly {background}.<br>You have {physique} physique, {skin} skin, {hair} hair, and {face} face.<br>You speak in a {speech} manner and wear {clothing} clothing.<br>You are {vice} yet {virtue}, and are generally regarded as {reputation}. <br>Your favourite food is {food}.'
 ]
 
 gen_data['name'] = [
-'Agune'
-, 'Beatrice'
-, 'Breagan'
-, 'Bronwyn'
-, 'Cannora'
-, 'Drelil'
-, 'Elgile'
-, 'Esme'
-, 'Griya'
-, 'Henaine'
-, 'Lirann'
-, 'Lirathil'
-, 'Lisabeth'
-, 'Moralil'
-, 'Morgwen'
-, 'Sybil'
-, 'Theune'
-, 'Wenain'
-, 'Ygwal'
-, 'Yslen'
-, 'Arwel'
-, 'Bevan'
-, 'Boroth'
-, 'Borrid'
-, 'Breagle'
-, 'Breglor'
-, 'Canhoreal'
-, 'Emrys'
-, 'Ethex'
-, 'Gringle'
-, 'Grinwit'
-, 'Gruwid'
-, 'Gruwth'
-, 'Gwestin'
-, 'Mannog'
-, 'Melnax'
-, 'Orthax'
-, 'Triunein'
-, 'Wenlan'
-, 'Yirmeor'
+'Анйалык «имеющий байдару»', 'Ивакак «ищущий»', 'Кайак «каяк»', 'Напагйак «мачта»', 'Паналык «с копьем»', 'Нагуя «чайка»', 'Нанухак «медвежонок»', 'Анука «ветер»', 'Апая «дедушка»', 'Ила «друг»', 'Имагми «морской»', 'Анылги «большой»', 'Нулик «жена»', 'Минлу «стена»', 'Нигугйак «свет»', 'Кайутак «блюдо»', 'Униткак «оставленная»', 'Аса «нижняя»', 'Инира «звезда»'
 ]
 
-gen_data['surname'] = [
-'Abernathy'
-, 'Addercap'
-, 'Burl'
-, 'Candlewick'
-, 'Cormick'
-, 'Crumwaller'
-, 'Dunswallow'
-, 'Getri'
-, 'Glass'
-, 'Harkness'
-, 'Harper'
-, 'Loomer'
-, 'Malksmilk'
-, 'Smythe'
-, 'Sunderman'
-, 'Swinney'
-, 'Thatcher'
-, 'Tolmen'
-, 'Weaver'
-, 'Wolder'
-]
 
 gen_data['background'] = [
-  'an alchemist'
-,  'a blacksmith'
-,  'a butcher'
-,  'a burglar'
-,  'a carpenter'
-,  'a cleric'
-,  'a gambler'
-,  'a gravedigger'
-,  'an herbalist'
-,  'a hunter'
-,  'a magician'
-,  'a mercenary'
-,  'a merchant'
-,  'a miner'
-, 'an outlaw'
-,  'a performer'
-,  'a pickpocket'
-,  'a smuggler'
-,  'a servant'
-,  'a ranger'
+  'охотник'
+,  'резчик по кости'
+,  'ученик шамана'
+,  'охотник'
+,  'рыбак'
+,  'охотник'
+,  'плотник лодочник'
+,  'рыбак'
 ]
 
 gen_data['physique'] = [
@@ -208,47 +135,39 @@ gen_data['reputation'] = [
 ,  'an entertainer'
 ]
 
-gen_data['misfortune'] = [
-  'abandoned'
-,  'addicted'
-,  'blackmailed'
-,  'condemned'
-,  'cursed'
-,  'abandoned'
-,  'addicted'
-,  'blackmailed'
-,  'condemned'
-,  'cursed'
+gen_data['food'] = [
+  'сырая рыба'
+,  'мактак (китовья кожа)'
+,  'кивиак'
+,  'игунак'
+,  'акутак'
+,  'вяленая рыба'
 ]
 
 gen_data['equipment'] = [
-  'armor: {armor}<br>Helmet/Shield: {helmet}<br>Weapons: {weapons}<br>Items: {tool,gear,trinket}<br>Bonus item: {bonus}'
+  'armor: {armor}<br>Shield: {helmet}<br>Weapons: {weapons}<br>Items: {tool,gear,trinket}<br>Bonus item: {bonus}'
 ]
 gen_data['armor'] = {
   '1-3': 'No upper body protection',
-  '4-14': 'Brigandine (1 Armor, bulky)',
-  '15-19': 'Chainmail (2 Armor, bulky)',
-  '20': 'Plate (3 Armor, bulky)'
+  '4-14': 'Куртка из толстых шкур (1 Armor, bulky)',
+  '15-19': 'Ламинарный доспех  (2 Armor, bulky)',
+  '20': 'Ламинарный доспех и крыло (3 Armor, bulky)'
 }
 
 gen_data['helmet'] = {
-  '1-13': ', no helmet nor shield',
-  '14-16': ', a Helmet (+1 Armor)',
-  '17-19': ', a Shield (+1 Armor)',
-  '20': ', a Helmet (+1 Armor) and a Shield (+1 Armor)'
+  '1-16': ', no shield',
+  '17-20': ', a Shield (+1 Armor)'
 }
 
 gen_data['weapons'] = {
-'1-10':'{wgroup1}',
-'11-14':'{wgroup2}',
+'1-15':'{wgroup1}',
 '15-19':'{wgroup3}',
-'20':'{wgroup4}'
+  '20':'No weapon'
 }
 
-gen_data['wgroup1'] = ['Dagger', 'Cudgel', 'Staff']
-gen_data['wgroup2'] = ['Sword', 'Mace', 'Axe']
-gen_data['wgroup3'] = ['Longbow (bulky)', 'Crossbow (bulky)', 'Sling']
-gen_data['wgroup4'] = ['Halberd (bulky)', 'War Hammer (bulky)', 'Battleaxe (bulky)']
+gen_data['wgroup1'] = ['Гарпун', 'Нож', 'Дубина']
+gen_data['wgroup3'] = ['Лук (bulky)']
+
 
 gen_data['armor_weapons'] = {
   '1-10':'{armor}',
@@ -263,31 +182,27 @@ gen_data['tool_trinket'] = {
 gen_data['bonus'] = {
   '1-6': '{tool_trinket}',
   '7-13': '{gear}',
-  '14-17': '{armor_weapons}',
-  '18-20': 'Spellbook containing the spell \'{spellbook}\''
+  '14-20': '{amulet}',
 }
 
 gen_data['tool'] = [
-  'Bellows'
   ,  'Bucket (stacks)'
   ,  'Caltrops'
   ,  'Chalk'
-  ,  'Chisel'
-  ,  'Cook Pots'
-  ,  'Crowbar'
+  ,  'Крюк для плетения сетей
   ,  'Drill (Manual)'
-  ,  'FishingRod'
-  ,  'Glue (stacks)'
-  ,  'Grease'
+  ,  'Удочка'
+  ,  'клей (stacks)'
+  ,  'Китовий жир'
   ,  'Hammer'
   ,  'Hourglass'
-  ,  'Metal File (stacks)'
+  ,  'Игла и нитки'
   ,  'Nails (stacks)'
-  ,  'Net (stacks)'
-  ,  'Saw'
-  ,  'Sealant'
-  ,  'Shovel'
-  ,  'Tongs'
+  ,  'Рыболовная сеть'
+  ,  'Пила'
+  ,  'Герметик'
+  ,  'Лопата'
+  ,  'Шкурный нож'
 ]
 
 gen_data['trinket'] = [
@@ -336,105 +251,11 @@ gen_data['gear'] = [
 ,  'Wolfsbane '
 ]
 
-gen_data['spellbook'] = [
-  'Adhere'
-,  'Anchor'
-,  'Animate Object'
-,  'Anthropomorphize'
-,  'Arcane Eye'
-,  'Astral Prison'
-,  'Attract'
-,  'Auditory Illusion'
-,  'Babble'
-,  'Bait Flower'
-,  'Beast Form'
-,  'Befuddle'
-,  'Body Swap'
-,  'Charm'
-,  'Command'
-,  'Comprehend'
-,  'Cone of Foam'
-,  'Control Plants'
-,  'Control Weather'
-,  'Cure Wounds'
-,  'Deafen'
-,  'Detect Magic'
-,  'Disassemble'
-,  'Disguise'
-,  'Displace'
-,  'Earthquake'
-,  'Elasticity'
-,  'Elemental Wall'
-,  'Filch'
-,  'Flare'
-,  'Fog Cloud'
-,  'Frenzy'
-,  'Gate'
-,  'Gravity Shift'
-,  'Greed'
-,  'Haste'
-,  'Hatred'
-,  'Hear Whispers'
-,  'Hover'
-,  'Hypnotize'
-,  'Icy Touch'
-,  'Identify Owner'
-,  'Illuminate'
-,  'Invisible Tether'
-,  'Knock'
-,  'Leap'
-,  'Liquid Air'
-,  'Magic Dampener'
-,  'Manse'
-,  'Marble Craze'
-,  'Masquerade'
-,  'Miniaturize'
-,  'Mirror Image'
-,  'Mirrorwalk'
-,  'Multiarm'
-,  'Night Sphere'
-,  'Objectify'
-,  'Ooze Form'
-,  'Pacify'
-,  'Phobia'
-,  'Pit'
-,  'Primal Surge'
-,  'Push/Pull'
-,  'Raise Dead'
-,  'Raise Spirit'
-,  'Read Mind'
-,  'Repel'
-,  'Scry'
-,  'Sculpt Elements'
-,  'Sense'
-,  'Missile Shield'
-,  'Shroud'
-,  'Shuffle'
-,  'Sleep'
-,  'Slick'
-,  'Smoke Form'
-,  'Sniff'
-,  'Snuff'
-,  'Sort'
-,  'Spectacle'
-,  'Spellsaw'
-,  'Spider Climb'
-,  'Summon Cube'
-,  'Swarm'
-,  'Telekinesis'
-,  'Telepathy'
-,  'Teleport'
-,  'Target Lure'
-,  'Thicket'
-,  'Summon Idol'
-,  'Time Control'
-,  'True Sight'
-,  'Upwell'
-,  'Vision'
-,  'Visual Illusion'
-,  'Ward'
-,  'Web'
-,  'Widget'
-,  'Wizard Mark'
-,  'X-Ray Vision'
+gen_data['amulet'] = [
+  'нерпа'
+,  'дед (1 слот)'
+,  'предок'
+,  'морж'
+,  'кит'
+,  'глаз Сила'
 ]
